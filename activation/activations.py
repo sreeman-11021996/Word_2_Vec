@@ -1,4 +1,4 @@
-from activation.base_activation import Activation
+from activation.base_activation import Activation,Base_Activation
 import numpy as np
 
 class Sigmoid(Activation):
@@ -27,14 +27,37 @@ class Tanh(Activation):
         
         super().__init__(tanh,d_tanh)
 
-class Relu(Activation):
+class ReLU(Activation):
     
     def __init__(self):
         
         def relu(x):
-            ...
+            return np.maximum(x,0)
                     
-        def d_relu(x):
-            ...
+        def d_relu(x:np.ndarray)->np.ndarray:
+            result = x.copy()
+            result[x >= 0] = 1
+            result[x < 0] = 0
+            return result
             
         super().__init__(relu,d_relu)
+        
+class Linear(Activation):
+    
+    def __init__(self):
+        
+        def linear(x):
+            return x
+                    
+        def d_linear(x:np.ndarray)->np.ndarray:
+            return np.ones(x.shape)
+            
+        super().__init__(linear,d_linear)
+        
+class Softmax(Base_Activation):
+        
+    def __call__(self,input_tensor:np.ndarray):
+        ...
+        
+    def backward_pass(self, output_gradient:np.ndarray)->np.ndarray:
+        ...
