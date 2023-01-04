@@ -14,7 +14,7 @@ from distutils.errors import (
     UnknownFileError)
 
 import unittest
-from test import support
+from tests import support
 from test.support.script_helper import assert_python_ok
 
 # http://bugs.python.org/issue4373

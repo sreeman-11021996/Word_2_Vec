@@ -11,7 +11,7 @@ import inspect
 import types
 
 from copy import deepcopy
-from test import support
+from tests import support
 
 import unittest
 

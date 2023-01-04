@@ -1,6 +1,6 @@
 from ctypes import *
 import contextlib
-from test import support
+from tests import support
 import unittest
 import sys
 

@@ -4,7 +4,7 @@ import stat
 import sys
 import unittest.mock
 from test.support import run_unittest, unix_shell
-from test import support as test_support
+from tests import support as test_support
 
 from distutils.spawn import find_executable
 from distutils.spawn import spawn

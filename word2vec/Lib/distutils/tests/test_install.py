@@ -17,7 +17,7 @@ from distutils.errors import DistutilsOptionError
 from distutils.extension import Extension
 
 from distutils.tests import support
-from test import support as test_support
+from tests import support as test_support
 
 
 def _make_ext_name(modname):

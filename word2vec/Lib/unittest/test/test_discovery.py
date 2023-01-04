@@ -4,7 +4,7 @@ import re
 import sys
 import types
 import pickle
-from test import support
+from tests import support
 import test.test_importlib.util
 
 import unittest

@@ -1,5 +1,5 @@
 import unittest
-from test import support
+from tests import support
 
 import gc
 import tkinter

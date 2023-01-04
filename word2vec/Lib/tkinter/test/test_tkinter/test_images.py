@@ -1,6 +1,6 @@
 import unittest
 import tkinter
-from test import support
+from tests import support
 from tkinter.test.support import AbstractTkTest, AbstractDefaultRootTest, requires_tcl
 
 support.requires('gui')

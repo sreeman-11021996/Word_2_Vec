@@ -1,6 +1,6 @@
 from ctypes import *
 import unittest
-from test import support
+from tests import support
 
 ################################################################
 # This section should be moved into ctypes\__init__.py, when it's ready.

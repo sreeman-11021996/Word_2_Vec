@@ -2,7 +2,7 @@ import io
 import sys
 import textwrap
 
-from test import support
+from tests import support
 from test.support import captured_stdout
 
 import traceback

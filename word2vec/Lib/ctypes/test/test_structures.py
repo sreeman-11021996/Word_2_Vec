@@ -5,7 +5,7 @@ from ctypes import *
 from ctypes.test import need_symbol
 from struct import calcsize
 import _ctypes_test
-from test import support
+from tests import support
 
 # The following definition is meant to be used from time to time to assist
 # temporarily disabling tests on specific architectures while investigations

@@ -1,6 +1,6 @@
 import asyncio
 import unittest
-from test import support
+from tests import support
 
 
 class MyException(Exception):

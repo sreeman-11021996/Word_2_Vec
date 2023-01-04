@@ -1,6 +1,6 @@
 import os
 import unittest
-from test import support
+from tests import support
 
 # skip tests if _ctypes was not built
 ctypes = support.import_module('ctypes')
