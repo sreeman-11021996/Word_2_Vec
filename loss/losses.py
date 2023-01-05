@@ -6,9 +6,10 @@ import numpy as np
 # 2. Mean Absolute Error
 # 3. Huber Loss
 # 4. Hinge Loss
-
+    
 class BinaryCrossEntropy(Loss):
     """
+    Used in Binary Classification
     y_true , y_pred -> (number_of_classes/output_nodes,number_of_samples)
     Calculate the Binary Cross Entropy Loss 
     i.e. Loss = -1/m * np.sum[(y*log(y_hat) + (1-y)*log(1-y_hat))]
@@ -25,6 +26,7 @@ class BinaryCrossEntropy(Loss):
     
 class Mean_Squared_Error(Loss):
     """
+    Used Generally for Regression
     y_true , y_pred -> (number_of_classes/output_nodes,number_of_samples)
     Calculate the Binary Cross Entropy Loss 
     i.e. Loss = -1/m * np.sum[(y - y_hat)^2]
